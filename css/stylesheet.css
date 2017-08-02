@@ -1,0 +1,252 @@
+/** {
+    border: 0.1px dashed black;
+}*/
+
+body {
+    background-color: #e2d0d0;
+    text-align: center;
+}
+#header {
+    font-size: 20px;
+    font-family: Verdana, serif;
+    margin-bottom: 10px;
+}
+#outer {
+    background-color: #966c0a;
+    width: 340px;
+    height: 350px;
+    margin: auto;
+    border-radius: 5px;
+}
+
+#turn {
+    display:none;
+    z-index: 10;
+    position: relative;
+    float: left;
+    margin-left: 20px;
+    margin-top: 325px;
+    font-family: Verdana, serif;
+}
+#resetGame {
+    z-index: 10;
+    position: relative;
+    float: right;
+    margin-right: -130px;
+    margin-top: 325px;
+    font-family: Verdana, serif;
+    text-decoration: underline;
+}
+#reset {
+     z-index: 10;
+     position: relative;
+     float: right;
+     margin-right: 100px;
+     margin-top: 325px;
+     font-family: Verdana, serif;
+ }
+#all {
+    z-index: 10;
+    position: relative;
+    float: right;
+    margin-right: -75px;
+    margin-top: 325px;
+    font-family: Verdana, serif;
+    text-decoration: underline;
+}
+
+#center {
+    background-color: #966c0a;
+    border-radius: 5px;
+    width: 340px;
+    height: 340px;
+    position: absolute;
+    vertical-align: bottom;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#choose {
+    clear: both;
+    height: 300px;
+    width: 300px;
+    background-color: white;
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: Verdana, serif;
+}
+p:first-child {
+    margin-top: 50px;
+}
+p:nth-child(2) {
+    font-size: 50px;
+}
+/*Hovers*/
+#X:hover {
+    cursor: pointer;
+}
+#O:hover {
+    cursor: pointer;
+}
+#resetGame:hover {
+    cursor: pointer;
+}
+#all:hover {
+    cursor: pointer;
+}
+
+.wrapper div:hover {
+    cursor: pointer;
+}
+#X {
+    margin-right: 50px;
+}
+#game {
+    display: none;
+    position: absolute;
+    clear: both;
+    height: 300px;
+    width: 300px;
+    background-color: white;
+    border-radius: 5px;
+    font-size: 60px;
+    font-family: Verdana, serif;
+}
+#outcomeContainer {
+    position: absolute;
+    clear: both;
+    height: 300px;
+    width: 300px;
+    margin-top: -300px;
+    background-color: #86878c;
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: Verdana, serif;
+    display: none;
+    text-align: center;
+}
+#outcome {
+    margin-top: 120px;
+}
+.wrapper div {
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    float: left;
+    border: 1px solid black;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Remove Borders*/
+#casilla1 {
+    border-left: none;
+    border-top: none;
+    border-radius: 5px 0 0 0;
+}
+#casilla2 {
+    border-top: none;
+}
+#casilla3 {
+    border-top: none;
+    border-right: none;
+    border-radius: 0 5px 0 0;
+}
+#casilla4 {
+    border-left: none;
+}
+#casilla6 {
+    border-right: none;
+}
+#casilla7 {
+    border-left: none;
+    border-bottom: none;
+    border-radius: 0 0 0 5px;
+}
+#casilla8 {
+    border-bottom: none;
+}
+#casilla9 {
+    border-bottom: none;
+    border-right: none;
+    border-radius: 0 0 5px 0;
+}
+
+.wrapper {
+    height: 100px;
+    width: 300px;
+}
+/*Winner Lines*/
+.successLine {
+    display: none;
+    position: absolute;
+    background-color: black;
+    border-radius: 5px;
+    z-index: 10;
+}
+#success1 {
+    margin-top: -100px;
+    height: 5px;
+    width: 260px;
+}
+#success2 {
+    height: 5px;
+    width: 260px;
+}
+#success3 {
+    margin-top: 100px;
+    height: 5px;
+    width: 260px;
+}
+#success4 {
+    margin-left: -100px;
+    height: 260px;
+    width: 5px;
+}
+#success5 {
+    height: 260px;
+    width: 5px;
+}
+#success6 {
+    height: 260px;
+    width: 5px;
+    margin-left: 100px;
+}
+#success7 {
+    display: none;
+    z-index: 10;
+    position: absolute;
+    height: 260px;
+    width: 260px;
+}
+#success7:after {
+    content:"";
+    position:absolute;
+    border-top:5px solid black;
+    margin-left: -125px;
+    width:360px;
+    transform: rotate(45deg);
+    transform-origin: 0% 0%;
+}
+#success8 {
+    display:none;
+    z-index: 10;
+    position: absolute;
+    height: 260px;
+    width: 260px;
+}
+#success8:after {
+    content:"";
+    position:absolute;
+    border-top:5px solid black;
+    margin-left: -125px;
+    margin-top: 255px;
+    width:360px;
+    transform: rotate(-45deg);
+    transform-origin: 0% 0%;
+}
+
+
+
